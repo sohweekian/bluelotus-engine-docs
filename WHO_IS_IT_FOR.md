@@ -3,11 +3,11 @@
 ## This software is for you if…
 
 ### Researchers & academics
-You study **governed financial AI**, Bayesian inference in capital markets, institutional memory systems, or the failure modes of LLMs in live intelligence work.
+You study **governed financial AI**, Bayesian inference in capital markets, **game theory & Nash equilibrium in geopolitical risk**, institutional memory systems, or the failure modes of LLMs in live intelligence work.
 
 - Download the engine and run it on **synthetic demo data**
-- Read the theses in [bluelotus-research](https://github.com/sohweekian/bluelotus-research)
-- Cite the deterministic transition and NITE-PEI framework
+- Read the theses in [bluelotus-research](https://github.com/sohweekian/bluelotus-research) — including the [BGTM PhD thesis](https://github.com/sohweekian/bluelotus-research/blob/main/BGTM_V1_PhD_Thesis_GameTheory_NashEquilibrium_2026.md)
+- Cite the deterministic transition, NITE-PEI framework, and BGTM-V1 tool pack
 
 ### Quantitative developers & open-source builders
 You want a **reference implementation** of:
@@ -15,6 +15,7 @@ You want a **reference implementation** of:
 - Governance gates before publish
 - Contradiction registers with priority levels
 - Bayesian thesis updating from news events
+- **N-player Nash / QRE solvers** with Geo-LR bridge (BGTM-V1)
 - Learning spines with promotion ledgers (not blind auto-tuning)
 
 You will bring your own `dataset_raw.json`. The public package does not ship broker connectors.
@@ -77,6 +78,7 @@ You want a case study in how a real system evolved: dashboard → intelligence O
 | **I want to understand what it is** | [WHAT_IS_BLUELOTUS.md](WHAT_IS_BLUELOTUS.md) |
 | **I want the story** | [README.md](README.md) |
 | **I want the math & theses** | [bluelotus-research](https://github.com/sohweekian/bluelotus-research) |
+| **I want game theory / Nash** | [BGTM.md](BGTM.md) |
 | **I want the live demo dashboard** | [sohweekian.github.io/bluelotus](https://sohweekian.github.io/bluelotus) |
 
 ---
