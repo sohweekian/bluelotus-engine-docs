@@ -1,138 +1,97 @@
-# The Clerk Who Never Lies
+# BlueLotus V3 — Documentation
 
-**What BlueLotus V3 is, why we fired the agents, and what we open-sourced.**
+**Governed investment intelligence — frozen public release v3.0.0**
 
-[![pip install](https://img.shields.io/badge/pip-bluelotus--engine-4fc3f7?style=for-the-badge)](https://pypi.org/project/bluelotus-engine/)
+[![Download](https://img.shields.io/badge/Download-v3.0.0-4fc3f7?style=for-the-badge)](DOWNLOAD.md)
 [![Engine](https://img.shields.io/badge/Code-bluelotus--engine-181717?style=for-the-badge&logo=github)](https://github.com/sohweekian/bluelotus-engine)
-[![Research](https://img.shields.io/badge/Papers-bluelotus--research-533483?style=for-the-badge&logo=github)](https://github.com/sohweekian/bluelotus-research)
-[![Live dashboard](https://img.shields.io/badge/Dashboard-LIVE-4ade80?style=for-the-badge)](https://sohweekian.github.io/bluelotus)
+[![Research](https://img.shields.io/badge/Theses-bluelotus--research-533483?style=for-the-badge&logo=github)](https://github.com/sohweekian/bluelotus-research)
+[![Dashboard](https://img.shields.io/badge/Dashboard-LIVE-4ade80?style=for-the-badge)](https://sohweekian.github.io/bluelotus)
 
 ---
 
-## The one-sentence version
+## Start here
 
-BlueLotus V3 is a **family-office intelligence operating system** that ingests market reality, runs it through governance law, and hands a CIO a **contradiction map** — not a trade idea.
-
----
-
-## Act I — The seduction of agents
-
-June 2026. Nine local Qwen agents. A 65-step pipeline. A GPU permanently warm. Every 39 minutes, a council of specialists would read the tape and write briefings.
-
-It felt like the future.
-
-Then the CIO asked a simple question: *"Did you read all of it?"*
-
-ChatGPT 5.5 didn't. It skimmed a 4 MB JSON file, hallucinated the rest, and presented fiction with the same tone as fact. It could not tell a three-hour-old headline from a three-week-old one. **Temporal blindness** — not a bug you patch, a ceiling you hit.
-
-The agents were brilliant at prose. They were **terrible at being a clerk**.
+| I want to… | Read this |
+|------------|-----------|
+| **Download the software** | [DOWNLOAD.md](DOWNLOAD.md) |
+| **Understand what it does** | [WHAT_IS_BLUELOTUS.md](WHAT_IS_BLUELOTUS.md) |
+| **Know if it's for me** | [WHO_IS_IT_FOR.md](WHO_IS_IT_FOR.md) |
+| **See the architecture** | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| **Read the full story** | [The Clerk Who Never Lies](#the-story) below |
+| **Read academic theses** | [bluelotus-research](https://github.com/sohweekian/bluelotus-research) |
 
 ---
 
-## Act II — The doctrine
+## In one sentence
 
-BlueLotus was never meant to trade. Seven written doctrines say so:
+BlueLotus is a **family-office intelligence OS** that maps contradictions and governs truth for a CIO who executes manually — released as **frozen research infrastructure** (not a trading product).
 
-- No LLM order generation
-- Manual execution only
-- No broker write access
-- Governance gate before publish
-- Append-only audit trail
+---
 
-An LLM council in the production path was **architectural drift** — exciting, cinematic, and wrong for the job.
+## Quick download
 
-The job is narrower and harder:
+```bash
+pip install https://github.com/sohweekian/bluelotus-engine/releases/download/v3.0.0/bluelotus_engine-3.0.0-py3-none-any.whl
+python -m bluelotus_engine.cli init-workspace
+python -m bluelotus_engine.cli pipeline --once --dry-run
+```
+
+---
+
+## Release status
+
+| Item | Status |
+|------|--------|
+| Engine software | **Frozen at v3.0.0** — no further updates planned |
+| Documentation | This repository — stable reference |
+| Theses | [bluelotus-research](https://github.com/sohweekian/bluelotus-research) — may receive new papers |
+| Private production stack | **Proprietary** — not published |
+
+See [PUBLIC_RELEASE_NOTICE.md](https://github.com/sohweekian/bluelotus-research/blob/main/PUBLIC_RELEASE_NOTICE.md) for the public vs proprietary boundary.
+
+---
+
+## The story
+
+*The Clerk Who Never Lies* — why we removed LLM agents from production and open-sourced the deterministic engine.
+
+<details>
+<summary><strong>Read the full narrative</strong></summary>
+
+### Act I — The seduction of agents
+
+June 2026. Nine local Qwen agents. A 65-step pipeline. Every 39 minutes, a council of specialists would read the tape and write briefings.
+
+Then the CIO asked: *"Did you read all of it?"*
+
+Frontier LLMs skimmed multi-megabyte packages, hallucinated missing sections, and could not distinguish stale from fresh news. **Temporal blindness** — not a prompt bug, an architectural ceiling.
+
+### Act II — The doctrine
+
+Seven written doctrines: no LLM orders, manual execution, no broker write access, governance before publish, append-only audit.
+
+The job is narrower:
 
 > Map what the data says. Map what contradicts. Map what still needs human eyes. **Stop.**
 
-That job belongs to a **Chief Clerk**, not a storyteller.
+### Act III — Zone A
 
----
+**Deterministic Chief Clerk** — pure Python, no GPU inference. Same inputs → same outputs → auditable artifacts.
 
-## Act III — Zone A
+### Act IV — What we gave the world
 
-We built **Zone A**: a deterministic clerk layer.
-
-No Ollama. No Qwen. No sampling temperature. No "as an AI language model."
-
-Pure Python walks:
-
-- governance gate verdicts
-- operator verdict packs
-- portfolio math
-- broker-reported P/L integrity
-- blind-spot and causal status
-- contradiction register with priorities
-
-Same inputs → same outputs → same audit hash.
-
-The legacy nine-agent grand cycle still exists — **quarantined**. Manual only. Non-authoritative. A museum of what we tried.
-
-Production runs the clerk.
-
----
-
-## Act IV — What we shipped to the world
-
-We stripped the private parts and released **`bluelotus-engine`** on PyPI:
-
-```bash
-pip install bluelotus-engine
-bluelotus init-workspace
-bluelotus pipeline --once --dry-run
-```
-
-**Included:** governance, reports, deterministic clerk, NITE-PEI Bayesian thesis engine, SLICDO learning spine.
-
-**Excluded:** GitHub publish, Telegram bots, broker connectors, your portfolio.
-
-This is research infrastructure — a **governed financial cognition kernel** you can study, extend, or bolt onto your own data.
-
----
-
-## The math that survived the agent purge
-
-Bayesian thesis updating didn't need a GPU:
-
-$$P_{posterior} = \frac{P_{prior} \times LR_{adj}}{P_{prior} \times LR_{adj} + (1 - P_{prior})}$$
-
-Kill Condition Risk Index didn't need a poem:
-
-$$CKRI = \frac{\sum w_i \cdot P_{kill,i} + \lambda \cdot n_{corr}}{\sum w_i}$$
-
-The agents didn't make the math smarter. They made the **packaging** prettier — until they lied about the packaging.
-
----
-
-## Who this is for
-
-| You are… | Start here |
-|----------|------------|
-| A researcher studying governed financial AI | `pip install bluelotus-engine` |
-| A reader who wants the theses | [bluelotus-research](https://github.com/sohweekian/bluelotus-research) |
-| A visitor who wants the live dashboard | [sohweekian.github.io/bluelotus](https://sohweekian.github.io/bluelotus) |
-| A CIO running the private stack | Not public — by design |
-
----
-
-## Epilogue
-
-We didn't downgrade BlueLotus. We **promoted honesty** over performance theater.
-
-The pipeline still runs every 39 minutes. It still watches dozens of sources. It still updates thesis probabilities from news. It still computes Kelly sizing and kill conditions.
-
-It just stopped **pretending** an LLM council was the source of truth.
-
-The clerk doesn't improvise. The clerk doesn't flatter. The clerk maps contradictions.
+Sanitized **`bluelotus-engine` v3.0.0**: governance, clerk, NITE-PEI, SLICDO. No publish, no telegram, no broker connectors.
 
 **The CIO decides.**
 
+</details>
+
 ---
 
-<div align="center">
+## Authorship
 
-🌸 *BlueLotus V3 · Built with precision · Governed by doctrine*
+**Soh Wee Kian** · CIO · BlueLotus Fund Singapore
 
-[Install the engine](https://github.com/sohweekian/bluelotus-engine) · [Read the transition doc](https://github.com/sohweekian/bluelotus-research/blob/main/DETERMINISTIC_TRANSITION.md) · [Star the dashboard](https://github.com/sohweekian/bluelotus)
+MIT license on public engine code. Research and documentation only — not financial advice.
 
-</div>
+🌸 *Built with precision · Governed by doctrine*
