@@ -17,6 +17,7 @@
 | **Understand what it does** | [WHAT_IS_BLUELOTUS.md](WHAT_IS_BLUELOTUS.md) |
 | **Know if it's for me** | [WHO_IS_IT_FOR.md](WHO_IS_IT_FOR.md) |
 | **See the architecture** | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| **Game theory & Nash tool pack** | [BGTM.md](BGTM.md) |
 | **Read the full story** | [The Clerk Who Never Lies](#the-story) below |
 | **Read academic theses** | [bluelotus-research](https://github.com/sohweekian/bluelotus-research) |
 
@@ -24,7 +25,7 @@
 
 ## In one sentence
 
-BlueLotus is a **family-office intelligence OS** that maps contradictions and governs truth for a CIO who executes manually — released as **frozen research infrastructure** (not a trading product).
+BlueLotus is a **family-office intelligence OS** with a **Nash Equilibrium / QRE game-theory overlay (BGTM-V1)** — maps contradictions and governs truth for a CIO who executes manually — released as **frozen research infrastructure** (not a trading product).
 
 ---
 
@@ -80,7 +81,7 @@ The job is narrower:
 
 ### Act IV — What we gave the world
 
-Sanitized **`bluelotus-engine` v3.0.0**: governance, clerk, NITE-PEI, SLICDO. No publish, no telegram, no broker connectors.
+Sanitized **`bluelotus-engine` v3.0.0**: governance, clerk, NITE-PEI, **BGTM-V1 game theory**, SLICDO. No publish, no telegram, no broker connectors.
 
 **The CIO decides.**
 
