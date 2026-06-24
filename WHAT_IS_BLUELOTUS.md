@@ -9,7 +9,8 @@ It is a **research and contradiction-mapping engine** that:
 3. Produces structured reports (TXT, XLSX, DOCX)
 4. Maps **contradictions** — where data, operators, and portfolio math disagree
 5. Updates **Bayesian thesis probabilities** from news events (NITE-PEI)
-6. Maintains an **institutional learning spine** (SLICDO) with CIO-gated promotions
+6. Runs **N-player Nash / QRE game theory** on geopolitical scenarios (BGTM-V1) and feeds **Geo-LR** into thesis updating
+7. Maintains an **institutional learning spine** (SLICDO) with CIO-gated promotions
 
 > **The pipeline calculates. The clerk maps contradictions. The CIO decides.**
 
@@ -52,10 +53,13 @@ In June 2026, a **sanitized research edition** was released as a contribution to
 | **Governance gate** | Fail-closed approval before reports are trusted |
 | **Deterministic clerk (Zone A)** | Contradiction map from math and rules — no LLM agents |
 | **NITE-PEI** | Bayesian thesis updating, CKRI kill-risk index, Kelly sizing advisory |
+| **BGTM-V1** | Nash Equilibrium · QRE · Correlated Equilibrium · Geo-LR bridge into NITE-PEI |
 | **SLICDO** | Institutional claims, resolutions, replay, promotion proposals |
 | **Report generator** | Structured CIO intelligence package (TXT / XLSX / DOCX) |
 
 **Excluded from public edition:** GitHub publish, Telegram push, LLM agent council, live broker fetchers, private portfolio data.
+
+**Deep dive — game theory:** [BGTM.md](BGTM.md) · [PhD thesis](https://github.com/sohweekian/bluelotus-research/blob/main/BGTM_V1_PhD_Thesis_GameTheory_NashEquilibrium_2026.md)
 
 ---
 
@@ -75,4 +79,4 @@ Full story: [The Clerk Who Never Lies](README.md) · [DETERMINISTIC_TRANSITION.m
 
 ## One-line summary
 
-**BlueLotus is governed financial cognition for a CIO who executes manually — open-sourced as research infrastructure, not as a product.**
+**BlueLotus is governed financial cognition for a CIO who executes manually — with a formal Nash Equilibrium tool pack for geopolitical overlays — open-sourced as research infrastructure, not as a product.**
